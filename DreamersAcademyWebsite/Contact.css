@@ -1,0 +1,137 @@
+body{
+    font-size: 15px;
+}
+/* num1 */
+#b1, #b2, #b3, #b4, #b5, #b6{
+    background-color: transparent;
+    border: none;
+}
+
+#b2, #b3, #b4, #b5{
+   color: #656667; 
+}
+
+#b6{
+    background-image: linear-gradient( #3B64AD, #122249);
+    border-radius: 100px;
+    width: 150px;
+    height: 40px;
+    box-shadow: black;
+}
+#a1{
+    text-decoration: none;
+    color: white;
+    
+}
+.top1{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+.imgEmailSent{
+    width: 550px;
+}
+.mid{
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    font-size: 1.3rem;
+    padding-right: 200px;
+    /* padding-bottom: 200px; */
+    
+}
+.ContactUs{
+    color: #012970;
+}
+.p1{
+    color: #68696A;
+}
+/* num2 */
+.h1_1{
+    text-align: center;
+    font-size: 40px;
+}
+.left1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.mid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.address, .callUs, .openHours, .emailUs{
+    background-color: #FAFDFF;
+    padding: 40px;
+    margin: 20px;
+    
+    
+}
+.right1{
+    background-color: #FAFBFF;
+    
+
+}
+
+/* Num 8 */
+.num8{
+    background-color: #417AF7;
+    color: white;
+    padding: 30px;
+}
+.top4{
+    text-align:center;
+    font-size: 1.5rem;
+}
+.b14{
+    background-color: #FFC107;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+
+}
+.img5{
+    width: 130px;
+}
+
+ .mid4{
+    display: flex;
+     gap: 100px;
+    /* padding: 200px; */ 
+    
+}
+.about{
+    width: 200px;
+}
+.Company{
+    width: 300px;
+}
+.Courses{
+    width: 280px;
+}
+.Contact Details{
+    width: 200px;
+}
+.b15{
+    padding: 8px;
+    background-color: transparent;
+    color: white;
+    border: none;
+
+}
+.p10{
+    color: rgb(194, 194, 194);
+}
+.img6{
+    width: 1400px;
+    padding-top: 30px;
+}
+.p11{
+    color:#7399FB ;
+}
+.p12{
+    color: rgb(194, 194, 194) ;
+}

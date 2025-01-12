@@ -4,14 +4,14 @@
 }
 
 
-
+/* num1 */
 #b1, #b2, #b3, #b4, #b5, #b6{
     background-color: transparent;
-    border: transparent;
+    border: none;
 }
 
 #b2, #b3, #b4, #b5{
-   color: #656667
+   color: #656667; 
 }
 
 #b6{
@@ -51,16 +51,6 @@ body{
     display: flex;
 }
 
-/* .spin{
-    animation: spin infinite ;
-}
-
-@keyframes spin {
-    to {transform: rotate(0);}
-    from {transform: rotate(360);}
-
-} */
-
 #imgbaby{
     width: 400px;
 }
@@ -83,7 +73,10 @@ body{
 #b8{
     background-image: linear-gradient(#395FA6, #122248);
 }
-
+.a2{
+    text-decoration: none;
+    color: #656667;
+}
 
 /* Num2 */
 .num2{
@@ -263,11 +256,11 @@ body{
 .num5{
     padding: 30px;
 }
-/* Num6 */
+/* Num6 , Num7*/
 .img4{
     width: 800px;
 }
-.num6{
+.num6 , .num7 {
     background-color: #F8F9FC;
     text-align: center;
 
@@ -279,4 +272,63 @@ body{
 .h1_4{
    color:  #0E1133;
 }
-/* num7 */
+/* num8 */
+.num8{
+    background-color: #417AF7;
+    color: white;
+    padding: 30px;
+}
+.top4{
+    text-align:center;
+    font-size: 1.5rem;
+}
+.b14{
+    background-color: #FFC107;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+
+}
+.img5{
+    width: 130px;
+}
+
+ .mid4{
+    display: flex;
+     gap: 100px;
+    /* padding: 200px; */ 
+    
+}
+.about{
+    width: 200px;
+}
+.Company{
+    width: 300px;
+}
+.Courses{
+    width: 280px;
+}
+.Contact Details{
+    width: 200px;
+}
+.b15{
+    padding: 8px;
+    background-color: transparent;
+    color: white;
+    border: none;
+
+}
+.p10{
+    color: rgb(196, 189, 189);
+}
+.img6{
+    width: 1400px;
+    padding-top: 30px;
+}
+.p11{
+    color:#7399FB ;
+}
+
+
+
