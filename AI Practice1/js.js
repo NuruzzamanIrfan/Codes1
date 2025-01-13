@@ -9,26 +9,27 @@ Webcam.set({
     png_quality: 90
 })
 
-var result = document.getElementById('result');
-var obj = document.getElementById('obj');
-var acc = document.getElementById('acc');
+var result=document.getElementById('result');
+var obj=document.getElementById('obj');
+var acc=document.getElementById('acc');
 
 function snapshot() {
-    Webcam.snap(function(data_uri) {
-        result.innerHTML='<img src="'+data_uri+'"/>';
+    Webcam.snap(function(data_uri){
+        result.innerHTML='<img id="image" src="'+data_uri+'"/>';
     })
 }
 
-let imageModelURL = 'https://teachablemachine.withgoogle.com/models/FhPfPCnIh/';
+// let imageModelURL = 'https://teachablemachine.withgoogle.com/models/FhPfPCnIh/';
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/3oDcZ0Zj/';
 
 function modelload(){
     console.log("Model loaded");
 }
 
-classifier=m15.imageClassifier (imageModelURL+'model.json',modelload);
+classifier=ml5.imageClassifier (imageModelURL+'model.json',modelload);
 
-function gotResult(error, result){
-    if (error) {
+function gotResult(error,result){
+    if (error){
         console.log("error");
     }   
     else{
@@ -36,6 +37,11 @@ function gotResult(error, result){
         var label=results[0].label;
         obj.innerText="Object : "+label;
         var c=results[0].confidance.toFixed(2)*100; 
-        acc.innerText="Accurecy : "+c+"%";
+        acc.innerText="Accuracy : "+c+"%";
     }
+}
+
+var image=document.getElementById('image');
+function click(){
+    classifier.classify(image,gotResult);
 }

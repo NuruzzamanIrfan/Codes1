@@ -28,14 +28,14 @@
             <br>
 
             <button class="btn btn-primary" onclick="snapshot()">Take Image</button>
-            <button class="btn btn-primary">Identify Image</button>
+            <button class="btn btn-primary" onclick="click()">Identify Image</button>
 
             <br>
             <br>
 
             <h3 class="text-info-emphasis">Output; </h3>
             
-            <div class="result">
+            <div id="result">
                 <img id="result" class="card shadow border border-3 border-primary" style="height: 300px; width: 610px;">
             </div>
             
@@ -45,8 +45,8 @@
         <br>
         <br>
         <div>
-            <h5 class="obj">Object: </h5>
-            <h5 class="acc">Accuracy: </h5>
+            <h5 id="obj">Object: </h5>
+            <h5 id="acc">Accuracy: </h5>
         </div>
     </center>
 
