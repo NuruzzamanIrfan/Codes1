@@ -19,21 +19,20 @@ function snapshot() {
     })
 }
 
-// let imageModelURL = 'https://teachablemachine.withgoogle.com/models/FhPfPCnIh/';
-let imageModelURL = 'https://teachablemachine.withgoogle.com/models/0cnPG0Zfm/';
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/FhPfPCnIh/';
+
 
 function modelload(){
     console.log("Model loaded");
 }
 
 classifier=ml5.imageClassifier (imageModelURL+'model.json',modelload);
-
-function gotResult(error,result){
+function gotResult(error,results){
     if (error){
-        console.log("error");
+        console.log(error);
     }   
     else{
-        console.log(result);
+        console.log(results);
         var label=results[0].label;
         obj.innerText="Object : "+label;
         var c=results[0].confidence.toFixed(2)*100; 
@@ -41,7 +40,8 @@ function gotResult(error,result){
     }
 }
 
-var image=document.getElementById('image');
-function click(){
+
+function check(){
+    var image=document.getElementById('image');
     classifier.classify(image,gotResult);
 }
