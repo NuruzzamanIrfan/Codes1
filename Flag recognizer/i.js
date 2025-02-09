@@ -19,7 +19,8 @@ function snapshot() {
     })
 }
 
-let imageModelURL = 'https://teachablemachine.withgoogle.com/models/FhPfPCnIh/';
+// let imageModelURL = 'https://teachablemachine.withgoogle.com/models/FhPfPCnIh/';
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/0cnPG0Zfm/';
 
 
 function modelload(){

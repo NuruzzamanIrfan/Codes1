@@ -1,15 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My websites</title>
-
+  <meta charset="UTF-8">
+  <title>Magical Adventure</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e0f7fa;
+      color: #00695c;
+      text-align: center;
+      padding: 50px;
+    }
+    #game {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    button {
+      background-color: #26a69a;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    button:hover {
+      background-color: #00796b;
+    }
+  </style>
 </head>
 <body>
+  <div id="game">
+    <h1 id="sceneTitle">Welcome to the Magical Forest</h1>
+    <p id="sceneText">You are standing at the edge of a magical forest. The trees shimmer with sparkling lights, and you hear the gentle whisper of the wind inviting you to explore.</p>
+    <div id="choices">
+      <button onclick="choose(1)">Enter the forest path</button>
+      <button onclick="choose(2)">Follow the sparkling river</button>
+      <button onclick="choose(3)">Climb aboard a friendly dragon</button>
+    </div>
+  </div>
+  <script src="js.js"></script>
 
-    
-    <link rel="stylesheet" href="css.css" >
-    <script src="js.js"></script>
-</body>
-</html>
+  <script>    
