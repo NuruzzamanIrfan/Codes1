@@ -1,9 +1,22 @@
+let next = document.querySelector('.next');
+let prev = document.querySelector('.prev');
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item');
+    document.querySelector('.slide').appendChild(items[0]);
+});
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item');
+    document.querySelector('.slide').prepend(items[items.length - 1]);
+});
+
 const quizContainer = document.getElementById('quiz');
 const submitButton = document.getElementById('submit');
 
 const questions = [
     {
-        question: "When is International Mother Language Day observed?",
+        question: "1.When is International Mother Language Day observed?",
         answers: {
             a: "January 21",
             b: "February 21",
@@ -13,7 +26,7 @@ const questions = [
         correctAnswer: "b"
     },
     {
-        question: "Who first announced International Mother Language Day?",
+        question: "2.Who first announced International Mother Language Day?",
         answers: {
             a: "United Nations",
             b: "UNESCO",
@@ -23,7 +36,7 @@ const questions = [
         correctAnswer: "b"
     },
     {
-        question: "Which country initiated the idea to celebrate International Mother Language Day?",
+        question: "3.Which country initiated the idea to celebrate International Mother Language Day?",
         answers: {
             a: "India",
             b: "Pakistan",
@@ -33,7 +46,7 @@ const questions = [
         correctAnswer: "c"
     },
     {
-        question: "What event is commemorated on International Mother Language Day in Bangladesh?",
+        question: "4.What event is commemorated on International Mother Language Day in Bangladesh?",
         answers: {
             a: "Independence Day",
             b: "Language Movement of 1952",
@@ -43,7 +56,7 @@ const questions = [
         correctAnswer: "b"
     },
     {
-        question: "When did UNESCO formally recognize International Mother Language Day?",
+        question: "5.When did UNESCO formally recognize International Mother Language Day?",
         answers: {
             a: "2000",
             b: "1999",
@@ -53,7 +66,7 @@ const questions = [
         correctAnswer: "b"
     },
     {
-        question: "Which language was declared the sole national language of Pakistan in 1948?",
+        question: "6.Which language was declared the sole national language of Pakistan in 1948?",
         answers: {
             a: "Bengali",
             b: "English",
@@ -63,7 +76,7 @@ const questions = [
         correctAnswer: "c"
     },
     {
-        question: "Who first raised the demand for Bangla to be one of the national languages of Pakistan?",
+        question: "7.Who first raised the demand for Bangla to be one of the national languages of Pakistan?",
         answers: {
             a: "Rafiqul Islam",
             b: "Dhirendranath Datta",
@@ -73,7 +86,7 @@ const questions = [
         correctAnswer: "b"
     },
     {
-        question: "What happened on 21 February 1952 during the Language Movement?",
+        question: "8.What happened on 21 February 1952 during the Language Movement?",
         answers: {
             a: "The demand for Bangla was accepted",
             b: "Police opened fire on rallies",
@@ -83,7 +96,7 @@ const questions = [
         correctAnswer: "b"
     },
     {
-        question: "What is the name of the monument built in memory of the language martyrs in Bangladesh?",
+        question: "9.What is the name of the monument built in memory of the language martyrs in Bangladesh?",
         answers: {
             a: "Shaheed Minar",
             b: "Martyrs' Monument",
@@ -93,7 +106,7 @@ const questions = [
         correctAnswer: "a"
     },
     {
-        question: "Who suggested the date of 21 February for International Mother Language Day?",
+        question: "10.Who suggested the date of 21 February for International Mother Language Day?",
         answers: {
             a: "Abul Barkat",
             b: "Rafiqul Islam",
@@ -146,7 +159,6 @@ function showResults() {
         }
     });
 
-    // Display the score in an alert box
     alert(`You scored ${numCorrect} out of ${questions.length}`);
 }
 
