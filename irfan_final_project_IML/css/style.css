@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
     background: black;
     overflow: hidden;
@@ -34,12 +29,13 @@ body{
     display: inline-block;
     transition: 1s;
 }
+
 .slide .item:nth-child(1),
 .slide .item:nth-child(2){
     top: 0;
     left: 0;
     transform: translate(0, 0);
-    border-radius: 0;
+    border-radius: 0px;
     width: 100%;
     height: 100%;
 }
@@ -47,19 +43,20 @@ body{
 .slide .item:nth-child(3){
     left: calc(50% + 440px);
 }
+
 .slide .item:nth-child(4){
     left: calc(50% + 660px);
 }
-/* .slide .item:nth-child(){
-    left: calc(50% + 880px) ;
-} */
 
 
-.slide .item:nth-child(n + 5){
-    left: calc(50% + 880px + 220px);
+.slide .item:nth-child(n +5){
+    left: calc(50% + 1100px);
     opacity: 0;
 }
 
+.slide .item:nth-child(2) .content{
+    display: block;
+}
 
 .item .content{
     position: absolute;
@@ -69,12 +66,8 @@ body{
     text-align: left;
     color: rgb(0, 0, 0);
     transform: translate(0, -50%);
-    font-family: system-ui;
+    font-family: 'Poppins', sans-serif;
     display: none;
-}
-
-.slide .item:nth-child(2) .content{
-    display: block;
 }
 
 .content {
@@ -107,6 +100,19 @@ body{
     font-size: 1.2em;
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+.qoutes-container{
+    font-size: 30px;
+    text-align: center;
+}
+
+.qoutes_poems {
+    border: 1px snow dashed;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 .question-container {
